@@ -2,8 +2,8 @@
 @section("title", "registartion")
 
 @section("content")
-<main class="login-form mt-5" style="width: 100%">
-    <div class="container mt-5">
+<main class="mt-5">
+    <div class="mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 @if (session()->has("success"))
@@ -45,7 +45,6 @@
                                 <span class="text-danger">{{ $errors->first('password') }}</span>
                                 @endif
                             </div>
-                            <a href="{{ route('stripe.checkout',['price' => 10,'product' => 'silver']) }}">Make Payment</a>
 
 
                             <div class="form-group mb-5">
@@ -57,7 +56,7 @@
                                 <button type="submit" class="btn btn-dark btn-block">Sign Up</button>
                             </div>
                             <div class="col-md-10 mt-3">
-                            <p class="fs-5 text-center"><a href="{{route('register')}}" style="text-decoration: none;"><a href="{{route('login')}}">Allready have an account</a></p>
+                            <p class="fs-5 text-center"><a href="{{route('login')}}" style="text-decoration: none;">Allready have an account</a></p>
                           </div> 
                         </form>
 

@@ -2,8 +2,8 @@
 @section("title", "Login")
 
 @section("content")
-<main class="login-form mt-5" style="width: 100%">
-    <div class="cotainer mt-5">
+<main>
+    <div class="mt-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
                 @if (session()->has("success"))
